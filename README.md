@@ -18,4 +18,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/pocket/privapp-permissions-pocketmode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-pocketmode.xml
 ```
+
+OR 
+
+```
+$(call inherit-product-if-exists, device/<OEM>/<Device-Name>/pocket/config.mk)
+```
+
 And add to this repo into `pocket` folder.
